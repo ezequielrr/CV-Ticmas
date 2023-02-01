@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(50, 63, 134);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(154, 195, 241);
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* columna derecha */
+.columnaDerecha {
+  float: right;
+  width: 60%;
+  padding-right: 10%;
+}
+
+/* columna izquierda */
+.columnaIzquierda {
+  float: right;
+  width: 30%;
+  padding-right: 5%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(214, 213, 213);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 30px;
+  text-align: center;
+  align-content: center;
+  margin-top: 20px;
+  border-radius: 30px;
+  background: #ecebeb;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.card1 {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  background: #ecebeb;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.card2 {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  background: #ecebeb;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+/*barras de porcentaje*/
+
+.habilidades {
+  font-size: 18px;
+}
+
+.container {
+  background-color: rgb(192, 192, 192);
+  width: 80%;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.skill {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(6, 3, 61) 0%,
+    rgba(60, 116, 161, 1) 44%,
+    rgba(48, 136, 181, 1) 100%
+  );
+  color: white;
+  padding: 0.5%;
+  text-align: right;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+.html {
+  width: 80%;
+}
+
+.css {
+  width: 75%;
+}
+
+.javascript {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#social {
+  margin: 10px;
+}
+
+/* Footer */
+.footer {
+  padding: 30px;
+  text-align: center;
+  border-radius: 30px;
+  background: #f5f3f3;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.final {
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #bad3eb;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .columnaDerecha,
+  .columnaIzquierda {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card1,
+  .card2,
+  .footer {
+    width: 100%;
+  }
+}
